@@ -1,0 +1,340 @@
+/* General */
+@import url('https://fonts.cdnfonts.com/css/dubai?styles=20572,20570,20571,20569');
+
+* {
+  font-family: 'Changa', Arial, Helvetica, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+}
+.center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ******************************************* */
+/* navbar */
+/* navbar(icons) */
+
+/* ******************************************************** */
+
+
+img {
+  max-width: 100%; }
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+:focus {
+  outline: none; }
+
+.wrapper {
+  /* margin-top: 5rem; */
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+
+}
+
+.inner {
+  max-width: 50%;
+  margin: 0 auto ;
+  /* background: #fff; */
+  padding: 15px;
+ }
+
+.formm {
+  /* border: 1px solid #d3cccc; */
+  padding: 62px 65px 65px ;
+background: white;
+ }
+
+h3 {
+  text-transform: uppercase;
+  font-size: 35px;
+  font-family: "Abril_Fatface";
+  text-align: center;
+  margin-bottom: 48px;
+  color: #6d5555;
+  letter-spacing: 3px; }
+
+.form-group {
+  display: flex; }
+  .form-group .form-wrapper {
+    width: 50%; }
+    .form-group .form-wrapper:first-child {
+      margin-left: 40px;
+     }
+
+.form-wrapper {
+  margin-bottom: 27px; 
+}
+  .form-wrapper label {
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 1rem;
+    text-transform: uppercase;
+   color:white;
+ }
+
+.form-holder {
+  position: relative; }
+  .form-holder i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 14px;
+    font-size: 17px;
+    color: #999; }
+
+.form-control {
+  border: 1px solid #e6e6e6;
+  display: block;
+  width: 100%;
+  height: 42px;
+  padding: 0 20px 0 46px;
+  color: #999;
+  font-size: 15px; 
+  background-color:#efdcbe;
+   border:none;
+}
+  .form-control::-webkit-input-placeholder {
+    font-size: 17px;
+    transform: translateY(5px);
+    color: #999; }
+  .form-control::-moz-placeholder {
+    font-size: 17px;
+    transform: translateY(5px);
+    color: #999; }
+  .form-control:-ms-input-placeholder {
+    font-size: 17px;
+    transform: translateY(5px);
+    color: #999; }
+  .form-control:-moz-placeholder {
+    font-size: 17px;
+    transform: translateY(5px);
+    color: #999; }
+
+.select::after {
+  content: " \25bc ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
+  font-size: 15px;
+  color: #999; 
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-left: 20px; 
+}
+  select option[value=""][disabled] {
+    display: none; 
+}
+
+
+ 
+
+.form-end {
+  display: flex;
+  align-items: center;
+  /* margin-top: 15px;  */
+}
+
+.button-holder {
+  width: 50%;
+margin-bottom: 50px; 
+margin-top: 10px;
+}
+
+.checkbox {
+  position: relative;
+  width: 50%;
+  padding-left: 22px; }
+  .checkbox label {
+    cursor: pointer;
+    color: #999;
+    font-family: "Muli-SemiBold"; }
+  .checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; }
+  .checkbox input:checked ~ .checkmark:after {
+    display: block; }
+
+.checkmark {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  height: 12px;
+  width: 13px;
+  border-radius: 2px;
+  /* background-color: #ebebeb; */
+  border: 1px solid #ccc;
+  font-family: Material-Design-Iconic-Font;
+  color: #000;
+  font-size: 10px;
+  font-weight: bolder; }
+  .checkmark:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    content: '\f26b';
+   }
+
+@media (max-width: 767px) {
+  .wrapper {
+    display: block; }
+
+  form {
+    padding: 0;
+    border: none; }
+
+  .form-group {
+    display: block; }
+    .form-group .form-wrapper {
+      width: 100%; }
+      .form-group .form-wrapper:first-child {
+        margin-right: 0px; }
+       
+  .form-end {
+    display: block;
+   }
+
+  .checkbox, .button-holder {
+    width: 100%; }
+
+  .inner {
+    padding: 30px 15px; }
+
+  button {
+    float: none;
+    margin-top: 30px; }
+
+  h3 {
+    font-size: 30px;
+    margin-bottom: 40px; } }
+  .terms
+  {
+    cursor: pointer;
+    
+  }
+  .terms-link a
+  {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 14px;
+    text-decoration:underline;
+    color:#fad63f;
+  }
+  .address{
+    display: block;
+    width: 200%; 
+  }
+  
+  @media(max-width:758px){
+    .address{
+      width:100%
+    }
+  }
+  @media(max-width:760px){
+    .address{
+      width:100%
+    }
+  }
+  .btn-outline-success {
+    background-color: #fad63f;
+    border: 1px solid #fad63f;
+    color: #080808;
+    border-radius: 10px;
+    padding: 10px 30px;
+    --bs-btn-active-bg: #f6e899;
+    --bs-btn-active-border-color: #f6e899;
+    transition: 0.4s ease-in-out;
+  
+  }
+  
+  .btn-outline-success:hover {
+    background-color: #fad63f;
+    color: white;
+    border: 1px solid #fad63f;
+    transition: 0.4s;
+  }
+/* *********************************************** */
+  /* Change Shop Profile Photo */
+  .profile-pic {
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* margin-bottom: 6.25rem; */
+    /* margin-top: 5.25rem; */
+    height: 1px;
+    width: fit-content;
+    margin: 11.25rem auto 5.25rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.profile-pic input {
+  display: none;
+}
+
+.profile-pic img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 15rem;
+  /* height: 17.3125rem; */
+  border-radius: 3.125rem;
+  z-index: 0;  
+}
+
+.profile-pic .-label {
+  cursor: pointer;
+  height: 146px;
+  width: 146px;
+}
+
+.profile-pic:hover .-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(252, 245, 231, 0.879);
+  z-index: 1000;
+  color: #ffcd05;
+  border-radius: 100%;
+  margin-bottom: 0;
+  width: 10rem;
+  transition: all 0.3s ease-in-out;
+  height: 10rem;
+  border: #fad63f 1px solid;
+ 
+}
+
+.profile-pic span {
+  display: inline-flex;
+  padding: 0.2em;
+  height: 2em;
+  border-radius: 2.5rem;
+  font-weight: 800;
+  font-size: larger;
+} 

@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  direction: rtl;
+
+}
+
+.background {
+  background: url('https://st4.depositphotos.com/8707842/24110/i/1600/depositphotos_241109306-stock-photo-set-construction-tools-wooden-background.jpg');
+  /* background: url('./depositphotos_241109306-stock-photo-set-construction-tools-wooden-background.jpg')
+    no-repeat center center/cover; */
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  filter: blur(20px);
+
+}
+
+
+.signup{
+font-weight: 600;
+}
+.signup-link p
+{
+font-weight: 400;
+}
+
+.signup-link p:hover {
+color: #e1b814;
+font-weight: 600;
+cursor: pointer;
+}
+
+.text-icon p
+{
+text-align: center;
+margin-bottom: 2vh;
+color: white;
+}
+.text-icon h2
+{
+margin-bottom: 2vh;
+font-weight: 600;
+}
+
+.btn{
+background-color: #fad63f;
+color: #080808;
+transition:all 0.3s ease-in-out;
+}
+
+.btn:hover {
+background-color: #fad63f;
+    color: white;
+}
+
+.text-icon a img{
+
+height: 2rem;
+width: 3rem;
+
+}
+
+.icon{
+display: flex;
+justify-content: center;
+}
+
+.icon+p
+{
+color: #080808;
+}
+
+
+
+.social-login {	
+width: 160px;
+text-align: center;
+}
+
+.social-icons {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.social-login__icon {
+padding: 20px 10px;
+color:  black;
+text-decoration: none;	
+
+font-size: 2rem;
+transition: all 0.6s ease-in-out;
+}
+
+.social-login__icon:hover {
+transform: scale(1.4);
+}
+
+.fa-twitter:hover
+{
+    color: #00aced;
+    color: rgb(0, 172, 237);
+}
+
+.fa-facebook:hover
+{
+    color: #3b5998;
+    color: rgb(59, 89, 152);
+}
+
+.fa-google:hover
+{
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* color: transparent; */
+    -webkit-text-fill-color: transparent;
+}
+
+
+input[type=radio]#flexRadioDefault2{
+accent-color: #fad63f;
+}
+input[type=radio]#flexRadioDefault1{
+  accent-color: #fad63f;
+  }

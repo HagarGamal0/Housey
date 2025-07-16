@@ -1,0 +1,404 @@
+
+/* ************** */
+/* Modal Buttons */
+.btns-secondary {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 1.625rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.btns-secondary:hover {
+  color: black;
+  background-color: white;
+  color: #ec1b24;
+}
+
+.btns-primary {
+  background-color: #fad63f;
+  color: #560808;
+  border-radius: 1.625rem;
+  border: none;
+  transition: 0.5s;
+}
+
+.btns-primary:hover {
+  background-color: #fad63f;
+  color: white;
+  transition: 0.5s;
+}
+
+.btns {
+  text-align: center;
+  /* padding: 10px 30px; */
+}
+
+.btn-main {
+  margin-bottom: 1rem;
+}
+
+.btns-edit {
+  width: 100%;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  border: 1px black solid;
+}
+
+.btns-edit:hover {
+  color: white;
+  background-color: black;
+  border: 1px black solid;
+}
+
+
+/* ******************* */
+
+/* FORM TO EDIT VENDOR INFO */
+#vendor_data_edit
+{
+    display: none;
+}
+/* ACCORDION */
+.bg-color
+{
+    background-color: #fcf5e7;
+}
+
+
+
+.flex-row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap:30px;
+}
+/*****content ****/
+/********* card *********/
+
+.card {
+  width: 40%;
+  /* margin: 1rem; */
+  margin-right: 0;
+  background-color: #f8f6f2;
+}
+
+.card {
+  height: 25rem;
+  transition: all 1s ease-in-out;
+  border: rgba(200, 25, 15, 0.1) 1px solid;
+}
+
+.card img {
+  height: 13rem;
+  
+}
+
+.card-body {
+  padding-top: 5px;
+  
+}
+
+.card:hover .card-img-top {
+  opacity: 0.8;
+  transition: all 0.8s ease-in-out;
+  
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05, 1.05);
+  background-color: #f8f7f6;
+  transition: all 0.8s ease-in-out ;
+}
+
+.discount_tag {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.3rem;
+  z-index: 9;
+  background: #ef492b;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.img_container {
+  width: 100%;
+  height: 100%;
+}
+
+.img_container>img {
+  width: 100%;
+  height: 100%;
+}
+.card_btn{
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.5rem;
+  padding:  0px 20px;
+}
+.button{
+  position: absolute;
+  bottom: 0.8rem;
+  left: 2rem;
+  padding:  0px 20px;
+  font-size: 1.5rem;
+  z-index: 999;
+  transform: translateX(-50%);
+  width: 2rem;
+  text-transform: capitalize;
+  border: 1px solid #560808;
+  outline: none;
+  background:  #fad63f;
+  border-radius: 5px;
+  transition: 1s;
+  cursor: pointer;
+align-items: center;
+justify-content: center;}
+
+
+.cart_btn {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  z-index: 999;
+  transform: translateX(-50%);
+  width: 2rem;
+  text-transform: capitalize;
+  border: 1px solid #560808;
+  outline: none;
+  background:  #fad63f;
+  border-radius: 100%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.fav_btn {
+  position: absolute;
+  top: 50%;
+  right: 38%;
+  z-index: 999;
+  transform: translateX(-50%);
+  width: 2rem;
+  text-transform: capitalize;
+  border: 1px solid #560808;
+  outline: none;
+  background:  #fad63f;
+  border-radius: 100%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+}
+.fav_btn:focus{
+  background: #efefef;
+
+}
+
+.more_btn {
+  position: absolute;
+  top: 50%;
+  right: 51%;
+  z-index: 999;
+  transform: translateX(-50%);
+  width: 2rem;
+  text-transform: capitalize;
+  border: 1px solid #560808;
+  outline: none;
+  background:  #fad63f;
+  border-radius: 100%;
+  transition: 1s;
+  cursor: pointer;
+  opacity: 0;
+
+}
+
+.card:hover .cart_btn {
+  opacity: 1;
+}
+
+.card:hover .more_btn {
+  opacity: 1;
+}
+
+.card:hover .fav_btn {
+  opacity: 1;
+}
+
+.cart_btn:hover {
+  background: #efefef;
+}
+
+.fav_btn:hover {
+  background: #efefef;
+}
+
+.more_btn:hover {
+  background: #efefef;
+}
+
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: #560808;
+  ;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  top: -35px;
+  right: -35px;
+
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.position-relative {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 75%);
+}
+
+.position-relative:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+/* .card>.position-relative:after {
+  background-image: linear-gradient(135deg, #f8ebd7, #fcf5e7);
+} */
+
+
+/* Star Rating */
+.rate {
+
+  border-bottom-right-radius: .75rem;
+  border-bottom-left-radius: .75rem;
+}
+
+
+.rating {
+  display: inline;
+  margin: 0px;
+}
+
+.rating>input {
+  display: none;
+}
+
+.rating>label {
+  position: relative;
+  width: 2rem;
+  font-size: 30px;
+  font-weight: 400;
+  color: #FFD600;
+  cursor: pointer;
+}
+
+.rating>label::before {
+  content: "\2605";
+  position: absolute;
+  opacity: 1;
+}
+
+
+
+.small {
+  font-size: small;
+}
+
+.actual-price {
+  text-decoration: line-through;
+  color: darkgray;
+  padding: 5px;
+}
+.cards_hide{
+min-width: 100%;
+}
+
+
+/******************************** PROFILE PIC *****************************************/
+/* Change Shop Profile Photo */ 
+.profile-pic { 
+  color: transparent; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  position: relative; 
+  margin-bottom: 6.25rem; 
+  margin-top: 5.25rem; 
+  height: 1px; 
+  width: fit-content; 
+  margin: 11.25rem auto 5.25rem; 
+  transition: all 0.4s ease-in-out; 
+} 
+ 
+.profile-pic input { 
+display: none; 
+} 
+ 
+.profile-pic img {
+  position: absolute;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 14rem;
+  /* height: 17.3125rem; */
+  margin-bottom: 90px;
+  border-radius: 3.125rem;
+  z-index: 0;
+}
+ 
+.profile-pic .-label { 
+cursor: pointer; 
+height: 146px; 
+width: 146px; 
+} 
+ 
+.profile-pic:hover .-label { 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+background-color: rgba(252, 245, 231, 0.879); 
+z-index: 1000; 
+color: #ffcd05; 
+border-radius: 100%; 
+margin-bottom: 0; 
+width: 18rem; 
+transition: all 0.3s ease-in-out; 
+height: 18rem; 
+border: #fad63f 1px solid; 
+ 
+} 
+ 
+.profile-pic span { 
+display: inline-flex; 
+padding: 0.7em; 
+height: 2em; 
+border-radius: 2.5rem; 
+font-weight: 800; 
+font-size: larger; 
+}

@@ -1,0 +1,198 @@
+
+/* ********************************************************************************** */
+.styling {
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+
+
+@media screen and (max-width:592px) {
+  .container2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:592px) {
+  .row {
+    width: 100%;
+  }
+}
+
+
+
+.container2 {
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  align-content: flex-start;
+  justify-content: space-evenly;
+}
+
+
+#addItem {
+  width: min-content;
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+  color: #333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.inputBox {
+  margin: 15px 0;
+}
+
+.inputBox span {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.inputBox input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  font-size: 15px;
+  text-transform: none;
+}
+
+.inputBox input:focus {
+  border: 1px solid #000;
+}
+
+
+
+.inputBox {
+  margin-top: 5px;
+}
+
+.inputBox img {
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 17px;
+  background: #fad63f;
+  color: black;
+  margin-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 1.625rem;
+  
+}
+
+
+.btn {
+  border-radius: 25px;
+}
+
+.submit-btn:hover {
+  color: white;
+}
+
+.table thead th {
+  vertical-align: bottom;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+}
+
+input {
+  width: 100px;
+  padding: 7px;
+}
+
+
+
+/* ******************************************************************************************************* */
+/* ********************************************************************************** */
+/* Start Loader */
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid rgb(158, 125, 82);
+  border-right: 16px solid rgb(110, 116, 99);
+  border-bottom: 16px solid rgba(129, 123, 123, 0.497);
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+/* End Loader */
+/* ******************************************************************************************* */
+
+
