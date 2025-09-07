@@ -1,0 +1,322 @@
+@import url('https://fonts.cdnfonts.com/css/dubai?styles=20572,20570,20571,20569');
+
+* {
+  font-family: 'Changa', Arial, Helvetica, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+  background-color: #fcf5e7;
+}
+
+a {
+  text-decoration: none;
+}
+p
+{
+  margin: 0;
+}
+ 
+ /* ************************************************************************************ */
+ /* Modal Buttons */
+ .btns-secondary {
+   background-color: white;
+   color: black;
+   border: none;
+   border-radius: 1.625rem;
+   transition: all 0.2s ease-in-out;
+ }
+
+ .btns-secondary:hover {
+   color: black;
+   background-color: white;
+   color: #ec1b24;
+ }
+
+ .btns-primary {
+   background-color: #fad63f;
+   color: #560808;
+   border-radius: 1.625rem;
+   border: none;
+   transition: 0.5s;
+ }
+
+ .btns-primary:hover {
+   background-color: #fad63f;
+   color: white;
+   transition: 0.5s;
+ }
+
+ .btns {
+   text-align: center;
+   padding: 10px 30px;
+ }
+
+ .btn-main {
+   margin-bottom: 1rem;
+ }
+
+ .btns-edit {
+   width: 100%;
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+   transition: all 0.2s ease-in-out;
+   border: 1px black solid;
+ }
+
+ .btns-edit:hover {
+   color: white;
+   background-color: black;
+   border: 1px black solid;
+ }
+ 
+ /* *************************************************************************** */
+ /* navbar */
+ /* navbar(icons) */
+ .navbar {
+   background-color: #c9ae86;
+   display: sticky;
+ }
+
+ .fa-users {
+   font-size: 30px;
+   color: #560808;
+
+ }
+
+ .logo img {
+   width: 4rem;
+ }
+
+ .fa-cart-arrow-down {
+   text-decoration: none;
+   font-size: 35px;
+   color: #560808
+ }
+
+ .btn-outline-success {
+   background-color: #fad63f;
+   border: 1px solid #fad63f;
+   color: #080808;
+   border-radius: 10px;
+   padding: 10px 30px;
+   --bs-btn-active-bg: #f6e899;
+   --bs-btn-active-border-color: #f6e899;
+   transition: 0.4s ease-in-out;
+ }
+
+ .btn-outline-success:hover {
+   background-color: #fad63f;
+   color: white;
+   border: 1px solid #fad63f;
+   transition: 0.4s;
+ }
+
+ b a {
+   text-decoration: none;
+   color: #560808;
+   font-size: 40px;
+   margin-left: 20px;
+
+ }
+
+ /* navbar(links) */
+ .navbar__links {
+   border-top: 1px solid rgb(104, 93, 67);
+   background: linear-gradient(183.41deg, #c9ae86 20%, #fcf5e7 120%);
+   height: 60px;
+ }
+
+ .dropdown-menu {
+   --bs-dropdown-zindex: 2000;
+ }
+
+ .nav-bar ul {
+   display: inline-flex;
+   list-style: none;
+   color: black;
+ }
+
+ .nav-bar ul li {
+   max-width: 150px;
+   padding: 15px;
+ }
+
+ .nav-bar ul li:hover a {
+   padding-top: 5px;
+ }
+
+ .navbar__links ul li a {
+   text-decoration: none;
+   color: #222;
+   transition: 0.7s ease;
+ }
+
+ .fa-home,
+ .fa-wrench,
+ .fa-axe,
+ .fa-brush,
+ .fa-bolt,
+ .fa-heart,
+ .fa-envelope,
+ .fa-phone,
+ .fa-map,
+ .fa-clock {
+   color: #560808;
+ }
+
+ .cool-link {
+   display: inline-block;
+   color: #000;
+   text-decoration: none;
+ }
+
+ .cool-link::after {
+   content: '';
+   display: block;
+   width: 0;
+   height: 2px;
+   background: #000;
+   transition: width .3s;
+ }
+
+ .cool-link:hover::after {
+   width: 100%;
+ }
+
+ .nav-bar li .active {
+   color: #fcdb57;
+ }
+ /* *************************************************************************************** */
+/*من هنا يبدا ملف (عسيى )*/
+
+div.gallery {
+    justify-content: space-between;
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 23%;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+div.gallery img {
+    width:100%;
+    height: 300px;
+    transition:all 0.3s ease-in-out ;
+}
+
+div.gallery img:hover {
+    opacity: 0.8;
+}
+
+div.desc {
+    text-align: center;
+    color: white;
+    background-color:#c9ae86;
+}
+.desc p
+{
+  padding: 15px;
+}
+
+.imgicon {
+    text-align: center;
+    background-color:#c9ae86;
+    margin-bottom: 0px;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+}
+.imgicon a
+{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/*انتهي الجزء الخاص بعيسى*/
+/* ************************************************************************************************************************ */
+.first-section
+{
+    text-align: center; 
+    margin-bottom: 150px;
+}
+.section-head h1
+{
+    color:#560808;
+      width: 100%;
+      padding-top: 100px;
+      font-size: 60px;
+}
+.section-text
+{
+  font-size: larger;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+    color: #560808;
+}
+.comment
+{
+    margin-top: 10px;
+    display: block;
+}
+.comment textarea
+{
+    margin-bottom: 10px;
+}
+.fa-facebook,
+.fa-linkedin
+{
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-linkedin:hover {
+  transform: scale(1.3,1.3);
+}
+.fa-facebook:hover{
+  transform: scale(1.3,1.3);
+}
+
+
+
+
+
+
+/* FOOTER */
+/* //////////////////////footer///////////////////// */
+
+.foot {
+  background: #c9ae86;
+  height: 20rem;
+  padding: 80px 15px;
+  margin: 130px 0 0;
+  bottom: 0;
+}
+
+.foot__icons ul li {
+  list-style: none;
+}
+
+.foot__icons a {
+  text-decoration: none;
+  color: rgb(15, 14, 14);
+}
+
+.footer__icons {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(183.41deg, #c9ae86 20%, #fcf5e7 120%);
+  width: 100%;
+  border-top: 1px solid rgb(104, 93, 67);
+  padding-bottom: 15px;
+}
+
+.footer__icons p {
+  padding-top: 1rem;
+  font-weight: 600;
+}

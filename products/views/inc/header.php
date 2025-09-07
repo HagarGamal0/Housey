@@ -1,0 +1,69 @@
+<?php
+require_once("../connection.php");
+//  require_once("../index.php");
+$stmt = $pdo->prepare("SELECT * FROM cart WHERE  user_id =1");
+$stmt->execute();
+$count_cart_items = count($stmt->fetchAll(PDO::FETCH_ASSOC));
+// echo $_SERVER["DOCUMENT_ROOT"];
+
+include_once("../../loginsystem/lib/session.php");
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'&& isset($_GET['logout']) ){
+// session::destroy();
+
+session_start();
+session_unset();
+session_destroy();
+header("Location: ../../login.php");
+// echo $_SERVER['REQUEST_URI'];
+}
+
+
+?>
+
+    <!------------------------navigation  ------------------------->
+    <!-- start navbar -->
+    <!-- navbar(icons) -->
+    <nav class="navbar navbar-expand-lg navbar__icons  ">
+        <div class="container">
+            <a class="navbar-brand logo ms-3" href="./home.php"><img src="assets/imgs/Housey.svg" alt=""></a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="ابحث عن المنتج..." aria-label="Search">
+                <button class="btn btn-outline-success me-1" type="submit">بحث</button>
+            </form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="./user_profile.php"><img src="./assets/imgs/profile.png" alt="" class="user_image" style="width:6%; float:left; margin-right:450px;"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-users"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <form action="?logout=true" method="post">
+                                <li><button type="submit"  class="dropdown-item" href="../../../loginsystem/login.php"><i class="fa fa-arrow-left"> </i>تسجيل الخروج</buttton></li>
+                            </form>
+                            <!-- <li><a class="dropdown-item" href="#"><i class="fa fa-user-plus"> </i>أنشئ حساب</a></li> -->
+                        </ul>
+                    </li>
+                    
+                </ul>
+                
+                <a href="../../cart/views/cart.php">
+                    <i class="fa fa-cart-arrow-down">
+                        <?php
+                        if ($count_cart_items > 0) {
+                            echo " <sup class='number'> $count_cart_items </sup>";
+                        } ?>
+                    </i>
+                </a>
+
+
+            </div>
+    </nav>

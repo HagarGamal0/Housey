@@ -1,0 +1,404 @@
+@import url('https://fonts.cdnfonts.com/css/dubai?styles=20572,20570,20571,20569');             
+*
+{               
+    font-family: 'Dubai', sans-serif;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+    z-index: 999;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+/*--------- NAV BAR ---------*/
+nav {
+  background: repeating-linear-gradient(rgb(223, 220, 184), rgb(110, 46, 46));
+  height: 9%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: right;
+  align-items: center;
+  padding: 10px;
+  opacity: 0.9;
+  direction: rtl;
+}
+
+a {
+  display: inline-flex;
+  padding: 0 40px;
+  font-size: large;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+.nav{
+  padding: 0 100px;
+
+}
+
+nav a:hover {
+  font-size: large;
+  font-weight: 800px;
+  color: #2e2119e6;
+  padding: 10px auto;
+}
+
+.active {
+  font-size: large;
+  font-weight: 200px;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 10px auto;
+}
+.fa-solid{
+  margin-left: 5px;
+}
+/* Services list */
+ul {
+  list-style: none;
+}
+.menu{
+  position: absolute;
+  top: 50px;
+ right: 40%;
+  overflow: hidden;
+  max-height: 0;
+  background: repeating-linear-gradient(rgb(223, 220, 184), rgb(110, 46, 46));
+  border-radius: 10px;
+}
+.menu a{
+  text-decoration: none;
+  color: rgb(242, 230, 230);
+}
+.sub-menu{
+  padding: 0;
+  cursor: pointer;
+}
+.sub-menu ul li a{
+  display: inline-block;
+  padding: 10px 20px;
+}
+span:hover .list{
+  max-height: 400px;
+  transition: max-height0.5s ease-in;
+  -webkit-transition: max-height0.5s ease-in;
+  -moz-transition:max-height 0.5s ease-in;
+}
+.sub-menu ul li:hover{
+  background-color:  rgb(242, 230, 230);
+}
+.sub-menu ul li:hover a{
+color:  rgb(42, 20, 20);
+
+}
+
+/* drop down list  */
+ul {
+  list-style: none;
+}
+.list{
+  position: absolute;
+  top: 60px;
+  right: 72%;
+  overflow: hidden;
+  max-height: 0;
+  background: repeating-linear-gradient(rgb(223, 220, 184), rgb(110, 46, 46));
+  border-radius: 10px;
+}
+.list a{
+  text-decoration: none;
+  color: rgb(242, 230, 230);;
+}
+.sub-list{
+  padding: 0;
+  cursor: pointer;
+}
+.sub-list ul li a{
+  display: inline-block;
+  padding: 10px 20px;
+}
+span:hover .list{
+  max-height: 400px;
+  transition: max-height0.5s ease-in;
+  -webkit-transition: max-height0.5s ease-in;
+  -moz-transition:max-height 0.5s ease-in;
+}
+.sub-list ul li:hover{
+  background-color:  rgb(242, 230, 230);
+}
+.sub-list ul li:hover a{
+color:  rgb(42, 20, 20);
+}
+
+
+
+
+
+
+
+
+
+/*------- LOGIN CONTENT -----*/
+body
+{
+  background-image: url('https://media.lmpm.website/uploads/sites/4/2020/11/Proactive-Property-Maintenance.jpg');
+  height: 100%; 
+  backdrop-filter: blur(5px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.maindiv
+{
+  margin: 0vh auto;
+  width: 70%;
+  padding-top: 10%;
+  display: flex;
+}
+
+
+
+
+.middleside
+{
+    z-index: 0;
+    width: 85%;  
+    background-color: #bb8464b6;
+    border-radius: 40px;
+    padding: 5%;
+    justify-content: center;
+    text-align: center;
+}
+ 
+  
+
+.text-icon p
+{
+  text-align: center;
+  margin-bottom: 2vh;
+  color: white;
+}
+.text-icon h2
+{
+  margin-bottom: 2vh;
+  font-weight: 600;
+  color: white;
+}
+.text-icon i
+{
+  font-size: 30px;
+  padding: 0 2vh;
+  margin-bottom: 2vh;
+  color: white;
+  transition: 0.3s;
+}
+.text-icon i:hover
+{
+  scale: 1.5;
+  transition: 0.3s;
+  color: #2e2119be;
+  border-color:#bb8464c1;
+  border-radius: 50%;
+  box-shadow: 0 0 1.5px 0 #bb8464b6;
+}
+
+
+.form input
+{
+    display: block;
+    width: 100%;
+    padding: 2vh;
+    border:none;
+    border-radius: 50px;
+    margin: 0 0 3vh ;
+    text-align: right;
+}
+  
+.submit input
+{
+   width: 100%;
+   border-radius: 50px;
+   background-color:#5a4133a1;
+   color: white;
+   display:block;
+   text-align: center;
+   transition: 0.1s;
+   
+}
+.submit input:hover
+{
+  color:white;
+  font-weight: 700;
+  background-color: #2e2119d5;
+  transition: 0.3s;
+}
+.email input[type=email]
+{
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.password input[type=password]
+{
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+.password
+{
+  position: relative;
+}
+.email
+{
+  position: relative;
+}
+.password i
+{
+  position:absolute;
+  cursor: pointer;
+  left: 15px;
+  padding: 8px 9px;
+  top: 10px;
+  color: #a7a5a5;
+  transition: 0.3s;
+}
+.email i
+{
+  left: 15px;
+  padding: 8px 9px;
+  top: 10px;
+  position: absolute;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.email input[type=email]:focus+i
+{
+  color: #bb8464b6;
+  border-color:#bb8464c1;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 #bb8464b6;
+}
+.password input[type=password]:focus+i
+{
+  color: #bb8464b6;
+  border-color: #bb8464b6;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 #bb8464b6;
+}
+
+
+.register-caption p
+{
+  text-align: center;
+  margin-bottom: 1vh;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+.register-caption .new-user
+{
+  font-weight: 600;
+}
+.register-caption a
+{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+.register-caption a:hover
+{
+  color: #2e2119;
+  font-weight: 400.25;
+  transition: 0.1s;
+}
+
+
+  .rightside
+  {
+    z-index: 0;
+    width: 32%;
+    display: flex;
+    border-left: 3px #9e6e53 solid;
+    border-right: 3px #9e6e53 solid;
+    padding-left: 5vh;
+    padding-right: 3vh;
+    text-align: right;
+    color: white;
+    background-color: #bb8464b6;
+    border-radius: 40px;
+  }
+  
+
+
+  .rightside h2
+  {
+    font-weight: 500;
+    font-size: 250%;
+    margin-top: 20vh;
+    margin-bottom: 1vh;
+  }
+
+  .rightside .second-p
+  {
+    margin-top: 1vh;
+  }
+  .rightside p
+  {
+    margin-top: 4vh;
+  }
+
+  .rightside h4
+  {
+    font-weight: 400;
+    margin-top: 5vh;
+    font-size: 20px;
+  }
+ 
+  /*------- FOOTER -----------*/
+.footer-background
+{
+  background-color:#ba8466 ;
+  padding-bottom: 3%;
+  margin-top: 3.5%;
+}
+.about
+{
+    margin: 0 16%;
+    display: flex;
+    padding-top: 3%;
+    padding-bottom: 2%;
+    color: white;
+}
+
+ .about p
+{
+    margin-top: 20px;
+    margin-right: 65%;
+} 
+.slogan
+{ 
+    font-size: 20px;
+    padding: 15px;
+    background: repeating-linear-gradient(rgb(223, 220, 184), rgb(110, 46, 46));
+    color: rgb(249, 247, 247);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.icons ul li
+{
+    list-style: none;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    width: 150%;
+}
+.icons a
+{
+   list-style: none;
+   text-decoration: none;
+   color: white;
+}
+

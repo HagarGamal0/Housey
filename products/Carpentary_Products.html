@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/CSS/products_page.css">
+
+
+
+    <title>Products </title>
+</head>
+
+<body>
+    <!------------------------navigation  ------------------------->
+    <!-- start navbar -->
+<!-- navbar(icons) -->
+<nav class="navbar navbar-expand-lg navbar__icons  ">
+    <div class="container">
+        <a class="navbar-brand logo ms-3" href="#"><img src="../assets/images/Housey.svg" alt="logo" width="70px" height="60px"></a>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="ابحث عن المنتج..." aria-label="Search">
+            <button class="btn btn-outline-success me-1" type="submit">بحث</button>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-question"></i></a>
+          </li> -->
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa fa-users"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><i class="fa fa-arrow-left"> </i>تسجيل الدخول</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="fa fa-user-plus"> </i>أنشئ حساب</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <b><a href="#">Mark</a></b>
+            <a href="#">
+                <i class="fa fa-cart-arrow-down"></i></a>
+        </div>
+    </div>
+</nav>
+<!-- navbar(links) -->
+<nav class="navbar__links sticky-top">
+    <div class="container">
+        <div class="nav-bar">
+            <ul class="links">
+                <li>
+                    <a href="../final/home.html" class="cool-link "></i>الرئيسية</a>
+                </li>
+                <li>
+                    <a href="../Products/Plumbing_Products.html" class="cool-link"></i>سباكة</a>
+                </li>
+                <li>
+                    <a href="../Products/Carpentary_Products.html" class="cool-link active"></i>نجارة</a>
+                </li>
+                <li>
+                    <a href="../Products/Painting_Products.html" class="cool-link "></i>نقاشة</a>
+                </li>
+                <li>
+                    <a href="../Products/Electro_Products.html" class="cool-link"></i>كهرباء</a>
+                </li>
+                <li>
+                    <a href="../About Us/about use .html" class="cool-link"></i>اعرف عنا</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- end navbar -->
+    <!-------------------------content  ---------------------->
+
+    <div class="container">
+        <div class="container">
+
+            <button class="btn mt-5 mb-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight ">تصنيف <i class="fa-solid fa-angles-left"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">عن ماذا تبحث؟</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex-column">
+                        <button class=" btn button__value" onclick="filterProducts('الكل')">الكل</button>
+                        <br>
+                        <button class=" btn button__value" onclick="filterProducts('الاكثر مبيعاً')">الاكثر
+                            مبيعاً</button>
+                        <br>
+                        <button class=" btn button__value" onclick="filterProducts('الاكثر تقييماً')">الاكثر تقييماً
+                        </button>
+                        <br>
+                        <button class=" btn button__value" onclick="filterProducts('الاعلى سعراً')">الاعلى
+                            سعراً</button>
+                        <br>
+                        <button class=" btn button__value" onclick="filterProducts('الاقل سعراً')">الاقل سعراً</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="d-flex justify-content-between flex-wrap " id="main">
+            <div class="card mt-5 hide ">
+                <div class="position-relative">
+
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cart_btn "><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="fav_btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button type="button" class="more_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">طوب بناء</h5>
+                    <!-- RATING start -->
+                    <div class="rating">
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                    <!-- RATING end -->
+                    <p class="card-text ">
+                        <small>اسم البراند</small>
+                        <br>
+                        <small>القطع المتوفرة <span class="me-2">(5 قطعة)</span></small>
+                        <br>
+                        <span class="price">السعر:50 EGP</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-5 hide ">
+                <div class="position-relative">
+                    <span class=" badge discount_tag ">50% خصم</span>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cart_btn "><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="fav_btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button type="button" class="more_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">طوب بناء</h5>
+                    <!-- RATING start -->
+                    <div class="rating">
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                    <!-- RATING end -->
+                    <p class="card-text ">
+                        <small>اسم البراند</small>
+                        <br>
+                        <small>القطع المتوفرة <span class="me-2">(2 قطعة)</span></small>
+                        <br>
+                        <span class="price">السعر:20EGP</span>
+                        <span class="actual-price dissabled">40EGP</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-5 hide ">
+                <div class="position-relative">
+                    <span class=" badge discount_tag ">50% خصم</span>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cart_btn "><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="fav_btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button type="button" class="more_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">طوب بناء</h5>
+                    <!-- RATING start -->
+                    <div class="rating">
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                    <!-- RATING end -->
+                    <p class="card-text ">
+                        <small>اسم البراند</small>
+                        <br>
+                        <small>القطع المتوفرة <span class="me-2">(2 قطعة)</span></small>
+                        <br>
+                        <span class="price">السعر:20EGP</span>
+                        <span class="actual-price dissabled">40EGP</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-5 hide ">
+                <div class="position-relative">
+                    <span class=" badge discount_tag ">50% خصم</span>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cart_btn "><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="fav_btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button type="button" class="more_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">طوب بناء</h5>
+                    <!-- RATING start -->
+                    <div class="rating">
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                    <!-- RATING end -->
+                    <p class="card-text ">
+                        <small>اسم البراند</small>
+                        <br>
+                        <small>القطع المتوفرة <span class="me-2">(2 قطعة)</span></small>
+                        <br>
+                        <span class="price">السعر:20EGP</span>
+                        <span class="actual-price dissabled">40EGP</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-5 hide ">
+                <div class="position-relative">
+                    <span class=" badge discount_tag ">50% خصم</span>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cart_btn "><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="fav_btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button type="button" class="more_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">طوب بناء</h5>
+                    <!-- RATING start -->
+                    <div class="rating">
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                    <!-- RATING end -->
+                    <p class="card-text ">
+                        <small>اسم البراند</small>
+                        <br>
+                        <small>القطع المتوفرة <span class="me-2">(2 قطعة)</span></small>
+                        <br>
+                        <span class="price">السعر:20EGP</span>
+                        <span class="actual-price dissabled">40EGP</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card mt-5 hide ">
+                <div class="position-relative">
+                    <span class=" badge discount_tag ">50% خصم</span>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP (1)(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./assets/imgs/OIP(1).jpeg" class="card-img-top d-block w-100"
+                                    alt="Card image cap">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns">
+                        <button class="cart_btn "><i class="fa-solid fa-cart-plus"></i></button>
+                        <button class="fav_btn"><i class="fa-solid fa-heart-circle-plus"></i></button>
+                        <button type="button" class="more_btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i
+                                class="fa-regular fa-eye"></i></button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">طوب بناء</h5>
+                    <!-- RATING start -->
+                    <div class="rating">
+                        <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+                        <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+                        <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+                        <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+                    </div>
+                    <!-- RATING end -->
+                    <p class="card-text ">
+                        <small>اسم البراند</small>
+                        <br>
+                        <small>القطع المتوفرة <span class="me-2">(2 قطعة)</span></small>
+                        <br>
+                        <span class="price">السعر:20EGP</span>
+                        <span class="actual-price dissabled">40EGP</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Start Modal Product Description -->
+<!-- Modal -->
+<!-- Example Code -->
+
+<div class="modal fade" id="exampleModalToggle" aria-labelledby="exampleModalToggleLabel" tabindex="-1"
+    style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel">تفاصيل المنتج </h1>
+            </div>
+            <div class="modal-body">
+                هو قالب مستطيل ذو حجم قياسي يُستخدم في إنشاء المباني. يُعد الطوب الخرساني أحد منتجات البناء الأكثر
+                تنوعًا والمتوفرة
+                نظرًا لتنوع المظاهر التي يمكن تنفيذها باستخدام الطوب الخرساني.
+
+                في الولايات المتحدة، يُطلق على الطوب الذي يحتوي على ركام من الرماد (الرماد المتطاير أو الرماد السفلي)
+                طوب الرماد، وطوب
+                السقاط (السقاط هو مرادف للرماد) في المملكة المتحدة، والطوب المفرغ أو الهوردي في الفلبين. يُعرف في
+                نيوزيلندا وكندا بالطوب
+                الخرساني (اسم شائع في الولايات المتحدة أيضًا). يُطلق عليه أيضًا اسم طوب البناء في نيوزيلندا. يُسمى في
+                أستراليا طوب بيسر،
+                نظرًا لكون شركة بيسر المورد الرئيسي للآلات التي صنعت الطوب الخرساني. تُستخدم مادة كلنكر كركام في طوب
+                كلنكر. لغايات
+                الاستخدام غير التقني، عادة ما تُعمم مصطلحات طوب الرماد وطوب السقاط لتشمل جميع هذه الأصناف.
+            </div>
+            <div class=" flex d-flex">
+                <div class="modal-footer">
+                    <button class="btns btns-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">حالة
+                        المنتج</button>
+                    <button class="btns btn-outline-success" onclick="cart()">اضف الى السلة <i
+                            class="fa fa-shopping-cart"></i></button>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">الحالة</h1>
+            </div>
+            <div class="modal-body">
+                المنتج يصل خلال 15 يوما من تاريخ الشراء
+            </div>
+            <div class="modal-footer">
+                <button class="btns btns-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                    موافق</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- End Example Code -->
+<!-- End Modal Product Description -->
+
+
+    <!-- footer -->
+
+<footer>
+    <div class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="foot__content col-lg-4 offset-lg-4">
+                    <h2>عن موقعنا </h2>
+                    <p>هنوصلك بالصنايعي بأسهل الطرق، ولو بتدور على الخامات هتلاقيها عندنا وكمان هتعرف أفضلها لأنها
+                        متقيمة من أكبر الصنايعية فهتشتري وانت مطمن،
+                        لو عايز شقة بدون مشقة متترددش انك تتواصل معانا.</p>
+                </div>
+                <div class="foot__icons col-lg-4">
+                    <ul>
+                        <li><a href="#">Add:Egypt, Aswan <i class="fa fa-map"></i></a></li><br>
+                        <li><a href="#">0112365478 (002) <i class="fa fa-phone"></i></a></li><br>
+                        <li><a href="#">EMAIL@gmail.com <i class="fa fa-envelope"></i></a></li><br>
+                        <li><a href="#">Sun.-Fri.9AM-8PM <i class="fa-regular fa-clock"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__icons sticky-bottom">
+        <p>كل جديد علي قد الايد - copyright @Group A </p>
+    </div>
+</footer>
+<!-- END FOOTER -->
+
+    <script src="./assets/JS/products_page.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

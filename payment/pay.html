@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Payment </title>
+    <link rel="stylesheet" href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDhuTzNRWGQ5QllLZlhya2UxVXlrUmF1amVwQXxBQ3Jtc0tuWjFUdGlLLXp2Uk1jUzg2c1FUSFlVZ2VtbnRndzJiYnducjVheW9xbGQ3RVMtdWRIR0gzd1NKZU1zMTQ3akx6VV8xSWdadlNmNnV2TkNpVUdlWV9mZEVLTXQtUmNaWGtkQk5qX3UzcWpjNGlMeVI3TQ&q=https%3A%2F%2Fcdnjs.com%2Flibraries%2Ffont-awesome&v=cce_70pxbqw">
+
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/fontawesome/css/all.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./pay.css">
+    
+</head>
+<body onload="loading()">
+  
+  <div id="loader" class="loader"></div>
+  <div id="myBody">
+<!-- start navbar -->
+<!-- navbar(icons) -->
+<nav class="navbar navbar-expand-lg navbar__icons  ">
+  <div class="container">
+    <a class="navbar-brand logo ms-3" href="#"><img src="../final/assetss/IMGS/Housey.svg" alt=""></a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="ابحث عن المنتج..." aria-label="Search">
+      <button class="btn btn-outline-success me-1" type="submit">بحث</button>
+    </form>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-question"></i></a>
+          </li> -->
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa fa-users"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"><i class="fa fa-arrow-left"> </i>تسجيل الدخول</a></li>
+            <li><a class="dropdown-item" href="#"><i class="fa fa-user-plus"> </i>أنشئ حساب</a></li>
+          </ul>
+        </li>
+      </ul>
+      <b><a href="#">Mark</a></b>
+      <a href="#">
+        <i class="fa fa-cart-arrow-down"></i></a>
+    </div>
+</nav>
+<!-- navbar(links) -->
+<nav class="navbar__links sticky-top">
+  <div class="container">
+    <div class="nav-bar">
+      <ul class="links">
+        <li>
+          <a href="../final/home.html"  class="cool-link"></i>الرئيسية</a>
+        </li>
+        <li>
+          <a href="../Products/Plumbing_Products.html" class="cool-link"></i>سباكة</a>
+        </li>
+        <li>
+          <a href="../Products/Carpentary_Products.html" class="cool-link"></i>نجارة</a>
+        </li>
+        <li>
+          <a href="../Products/Painting_Products.html" class="cool-link"></i>نقاشة</a>
+        </li>
+        <li>
+          <a href="../Products/Electro_Products.html" class="cool-link"></i>كهرباء</a>
+        </li>
+        <li>
+          <a href="../About Us/about use .html" class="cool-link"></i>اعرف عنا</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end navbar -->
+
+<!-- Page Body -->
+<div class="container styling mt-5">
+<div class="pay col-6 offset-md-1">
+    <form action="">
+
+        <div class="row">
+
+            <div class="col ">
+
+                <h3 class="title">عنوان الدافع </h3>
+
+                <div class="inputBox">
+                    <span>الاسم بالكامل :</span>
+                    <input id="user" type="text" placeholder="الاسم ثلاثى">
+                </div>
+                <div class="inputBox">
+                    <span>الايميل :</span>
+                    <input id="email" type="email" placeholder="example@gmail.com" pattern=".+@gmail\.com">
+                </div>
+                <div class="inputBox">
+                    <span>العنوان :</span>
+                    <input type="text" placeholder="الشارع ... رقم العمارة">
+                </div>
+                <div class="inputBox ">
+                    <span>المدينة :</span>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">اختر...</option>
+                        <option>...</option>
+                      </select>
+                                    </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>القسم :</span>
+                        <input type="text" placeholder="المنتزه">
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div class="col me-4">
+
+                <h3 class="title">الدفع</h3>
+
+                <div class="inputBox">
+                    <span>الكروت المقبولة :</span>
+                    <img src="./imgs/visa.png" alt="">
+                    <img src="./imgs/paypal.png">
+                    <img src="./imgs/discover.png">
+                </div>
+                <div class="inputBox">
+                    <span>الاسم على الكارت :</span>
+                    <input type="text" placeholder="">
+                </div>
+                <div class="inputBox">
+                    <span> رقم الكارت  :</span>
+                    <input type="number" placeholder="١١١١١ -٢٢٢٢ -٣٣٣٣ -٤٤٤٤ ">
+                </div>
+                <div class="inputBox">
+                    <span>شهر انتهاء الصلاحية:</span>
+                    <input type="text" placeholder="يناير">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>عام انتهاء الصلاحية</span>
+                        <input type="number" placeholder="٢٠٢٢ ">
+                    </div>
+                    <div class="inputBox">
+                        <span>رمز الامان :</span>
+                        <input type="text" placeholder="١٢٣٤">
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value=" اتمام الشراء" onclick="save()" class="submit-btn">
+
+    </form>
+</div>
+
+    <div class="container2-fluid">
+        <div class="row ">
+            <div class="cart d-flex align-items-center">
+                <h3 class="my-4 cart-text"> عربة التسوق </h3> 
+                 <i class="fa fa-shopping-cart me-1" style="font-size:36px"></i>
+            </div>
+
+          <div class="col-12">
+            <table class="table table-responsive">
+              <thead>
+                <tr>
+                  <th scope="col">اسم المنتج</th>
+                  <th scope="col">السعر (ج)</th>
+                  <th scope="col">الكمية</th>
+                  <th scope="col">المجموع(ج)</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="name">خشب</td>
+                  <td class="unit"><input type="number" value="10" /></td>
+                  <td class="num"><input type="number" value="5" /></td>
+                  <td class="subT"></td>
+                  <td><button class="btn btn-sm remove"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="trash-34-px" transform="translate(-6.000000, -6.000000)" fill-rule="nonzero"><polygon id="Path" transform="translate(17.000000, 17.000000) rotate(-180.000000) translate(-17.000000, -17.000000) " points="3.55271368e-15 -3.55271368e-15 34 -3.55271368e-15 34 34 3.55271368e-15 34"></polygon><path d="M7.125,10.914 L7.948,10.914 L9.868,26.966 C9.904,27.35 10.234,27.625 10.618,27.625 L23.382,27.625 C23.766,27.625 24.077,27.35 24.132,26.966 L26.052,10.914 L26.875,10.914 C27.295,10.914 27.625,10.584 27.625,10.164 C27.625,9.743 27.295,9.414 26.875,9.414 L21.133,9.414 L21.133,7.124 C21.133,6.704 20.803,6.374 20.383,6.374 L13.617,6.374 C13.197,6.374 12.867,6.704 12.867,7.124 L12.867,9.412 L7.124,9.412 C6.704,9.412 6.375,9.742 6.375,10.162 C6.375,10.584 6.722,10.913 7.125,10.913 L7.125,10.914 Z M14.367,7.876 L19.633,7.876 L19.633,9.413 L14.367,9.413 L14.367,7.876 L14.367,7.876 Z M24.534,10.914 L22.724,26.142 L11.276,26.142 L9.466,10.914 L24.534,10.914 Z M14.513,13.367 C14.093,13.367 13.763,13.697 13.763,14.117 L13.763,23.104 C13.763,23.525 14.093,23.854 14.513,23.854 C14.933,23.854 15.263,23.525 15.263,23.104 L15.263,14.117 C15.263,13.697 14.933,13.367 14.513,13.367 Z M19.487,13.367 C19.067,13.367 18.737,13.697 18.737,14.117 L18.737,23.104 C18.737,23.525 19.085,23.854 19.487,23.854 C19.907,23.854 20.237,23.525 20.237,23.104 L20.237,14.117 C20.237,13.697 19.907,13.367 19.487,13.367 Z" id="prefix__a" fill="#000000"></path></g></g></svg> </button></td>
+                </tr>
+                <tr>
+                  <td class="name">زجاج</td>
+                  <td class="unit"><input type="number" value="15" /></td>
+                  <td class="num"><input type="number" value="7" /></td>
+                  <td class="subT"></td>
+                  <td><button class="btn btn-sm remove"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="trash-34-px" transform="translate(-6.000000, -6.000000)" fill-rule="nonzero"><polygon id="Path" transform="translate(17.000000, 17.000000) rotate(-180.000000) translate(-17.000000, -17.000000) " points="3.55271368e-15 -3.55271368e-15 34 -3.55271368e-15 34 34 3.55271368e-15 34"></polygon><path d="M7.125,10.914 L7.948,10.914 L9.868,26.966 C9.904,27.35 10.234,27.625 10.618,27.625 L23.382,27.625 C23.766,27.625 24.077,27.35 24.132,26.966 L26.052,10.914 L26.875,10.914 C27.295,10.914 27.625,10.584 27.625,10.164 C27.625,9.743 27.295,9.414 26.875,9.414 L21.133,9.414 L21.133,7.124 C21.133,6.704 20.803,6.374 20.383,6.374 L13.617,6.374 C13.197,6.374 12.867,6.704 12.867,7.124 L12.867,9.412 L7.124,9.412 C6.704,9.412 6.375,9.742 6.375,10.162 C6.375,10.584 6.722,10.913 7.125,10.913 L7.125,10.914 Z M14.367,7.876 L19.633,7.876 L19.633,9.413 L14.367,9.413 L14.367,7.876 L14.367,7.876 Z M24.534,10.914 L22.724,26.142 L11.276,26.142 L9.466,10.914 L24.534,10.914 Z M14.513,13.367 C14.093,13.367 13.763,13.697 13.763,14.117 L13.763,23.104 C13.763,23.525 14.093,23.854 14.513,23.854 C14.933,23.854 15.263,23.525 15.263,23.104 L15.263,14.117 C15.263,13.697 14.933,13.367 14.513,13.367 Z M19.487,13.367 C19.067,13.367 18.737,13.697 18.737,14.117 L18.737,23.104 C18.737,23.525 19.085,23.854 19.487,23.854 C19.907,23.854 20.237,23.525 20.237,23.104 L20.237,14.117 C20.237,13.697 19.907,13.367 19.487,13.367 Z" id="prefix__a" fill="#000000"></path></g></g></svg> </button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+          <form class="col-12 mt-6 mb-4" id="addItem">
+            <input class="mx-4 p-0" name="name" type="text" placeholder=" اسم المنتج" required/>
+            <input class="mx-4" name="unit" type="number" placeholder="السعر"/>
+            <input class="mx-4" name="num" type="number" placeholder="الكمية"/>
+            <button class="btns btn-outline-success btn-sm">اضافة</button>
+          </form>
+          
+          <div class="col-12 col-md-12">
+            <h3>السعر الكلى: ج<span id="totalValue"></span></h3>
+          </div>
+         
+          
+        </div>
+      </div>
+</div>    
+
+
+<!-- START FOOTER -->
+<!-- footer -->
+
+<footer>
+  <div class="foot">
+    <div class="container">
+      <div class="row">
+        <div class="foot__content col-lg-4 offset-lg-4">
+          <h2>عن موقعنا </h2>
+          <p>هنوصلك بالصنايعي بأسهل الطرق، ولو بتدور على الخامات هتلاقيها عندنا وكمان هتعرف أفضلها لأنها
+            متقيمة من أكبر الصنايعية فهتشتري وانت مطمن،
+            لو عايز شقة بدون مشقة متترددش انك تتواصل معانا.</p>
+        </div>
+        <div class="foot__icons col-lg-4">
+          <ul>
+            <li><a href="#">Add:Egypt, Aswan <i class="fa fa-map"></i></a></li><br>
+            <li><a href="#">0112365478 (002) <i class="fa fa-phone"></i></a></li><br>
+            <li><a href="#">EMAIL@gmail.com <i class="fa fa-envelope"></i></a></li><br>
+            <li><a href="#">Sun.-Fri.9AM-8PM <i class="fa-regular fa-clock"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__icons sticky-bottom">
+    <p>كل جديد علي قد الايد - copyright @Group A </p>
+  </div>
+</footer>
+</div>
+<!-- END FOOTER -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+<script src="./imgs/pay.js"></script>
+
+</html>

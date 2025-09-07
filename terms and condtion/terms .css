@@ -1,0 +1,150 @@
+ 
+ 
+ /* navbar */
+/* navbar(icons) */
+body{
+    direction: rtl;
+}
+.navbar {
+    background-color: #c9ae86;
+    display: sticky;
+}
+
+.fa-users {
+    font-size: 30px;
+    color: #560808;
+
+}
+.logo img
+{
+    width: 4rem;
+}
+.fa-cart-arrow-down {
+    text-decoration: none;
+    font-size: 35px;
+    color: #560808
+}
+
+.btn-outline-success {
+    background-color: #fad63f;
+    border: 1px solid #fad63f;
+    color: #080808;
+    border-radius: 10px;
+    padding: 10px 30px;
+    --bs-btn-active-bg: #f6e899;
+    --bs-btn-active-border-color: #f6e899;
+    transition:  0.4s ease-in-out;
+}
+
+.btn-outline-success:hover {
+    background-color: #fad63f;
+        color: white;
+    border: 1px solid #fad63f;
+    transition: 0.4s;
+}
+
+b a {
+    text-decoration: none;
+    color: #560808;
+    font-size: 40px;
+    margin-left: 20px;
+
+}
+
+/* navbar(links) */
+.navbar__links {
+    border-top: 1px solid rgb(104, 93, 67);
+    background: linear-gradient(183.41deg, #c9ae86 20%, #fcf5e7 120%);
+    height: 60px;
+}
+.dropdown-menu {
+    --bs-dropdown-zindex: 2000;
+}
+.nav-bar ul {
+    display: inline-flex;
+    list-style: none;
+    color: black;
+}
+
+.nav-bar ul li {
+    max-width: 150px;
+    padding: 15px;
+}
+
+.nav-bar ul li:hover a {
+    padding-top: 5px;
+}
+
+.navbar__links ul li a {
+    text-decoration: none;
+    color: #222;
+    transition: 0.7s ease;
+}
+
+.fa-home,
+.fa-wrench,
+.fa-axe,
+.fa-brush,
+.fa-bolt,
+.fa-heart {
+    color: #560808;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+}
+
+.nav-bar li .active {
+    color: #fcdb57;
+}
+
+.foot {
+     background: #c9ae86;
+     height: 20rem;
+     padding: 80px 15px;
+     margin: 130px 0 0;
+     bottom: 0;
+ }
+
+ .foot__icons ul li {
+     list-style: none;
+ }
+
+ .foot__icons a {
+     text-decoration: none;
+     color: rgb(15, 14, 14);
+ }
+
+ .footer__icons {
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     background: linear-gradient(183.41deg, #c9ae86 20%, #fcf5e7 120%);
+     width: 100%;
+     border-top: 1px solid rgb(104, 93, 67);
+ }
+
+ .footer__icons p {
+    padding-top: 1rem;
+    font-weight: 600;
+}
+
+li {
+    
+        line-height: 2rem;
+}
